@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=100%,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <!-- <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" /> -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+	  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <script src="<%= BASE_URL %>viewport-units-buggyfill.js" type="text/javascript"></script>
-    <script>window.onload=function(){window.viewportUnitsBuggyfill.init({hacks: window.viewportUnitsBuggyfillHacks})}</script>
+    <title></title>
+    <script src="<%= BASE_URL %>polyfill.js" type="text/javascript"></script>
+    <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js" type="text/javascript"></script>
+    <style>#app{width:100vw!important;}#nav{z-index: 999!important;}.mint-indicator{position: relative;z-index: 999;}.mint-indicator-wrapper,.mint-toast{z-index: 99999 !important;}#app #head{z-index: 9!important;}</style>
   </head>
   <body>
     <noscript>
